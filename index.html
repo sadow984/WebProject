@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/images/Capture.PNG">
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/responsive/responsive.css">
+    <script src="/script/script.js"></script>
+
+    <title>Project</title>
+</head>
+
+<body>
+    <header class="header up">
+        <div class="name">
+            <h2>KCC Institute of Technology and Management</h2>
+        </div>
+        <div class="login">
+            <a id="login" onclick="openForm()"> Login </a>
+
+            <div class="form-popup" id="myForm">
+                <div>
+                    <form action="" class="form-container">
+                        <div id="sign-in-up"><a href="">Sign in</a><a href="">Sign up</a></div>
+
+                        <label for="id"><b> ID </b></label>
+                        <input type="text" placeholder="Enter Your ID" name="id" required>
+
+                        <label for="psw"><strong> Password </strong></label>
+                        <input type="password" name="psw" placeholder="Enter Password" required>
+
+                        <button type="submit" class="btn"> Login </button>
+                        <button class="btn cancel" onclick="closeForm()"> Close </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <div class="image"> Image for background.</div>
+    </header>
+    <div class="row center">
+        <div class="column menu left">
+            <ul>
+                <li><a href="#">First</a></li>
+                <li><a href="#">First</a></li>
+                <li><a href="#">First</a></li>
+                <li><a href="#">First</a></li>
+            </ul>
+        </div>
+        <div class="column mid">
+            <div class="options" id="options">
+                <a href="" id="most-liked" onclick="options('most-liked')">Most Liked</a>
+                <a href="" id="newest" onclick="options('newest')">Newest</a>
+                <a href="" id="important" onclick="options('important')">Important</a>
+            </div>
+
+            <iframe id="frame" src="notice_page.html"> Sorry your browser doesn't support frames.
+            </iframe>
+        </div>
+        <div class="column right">
+            <h2>Circular</h2>
+            <marquee id="mar" behavior="scroll" direction="up" height="360px" onmouseover="this.stop()"
+                onmouseout="this.start()">
+                <p>An essay is generally a short piece of writing outlining the writer's perspective or story. It is
+                    often
+                    considered synonymous with a story or a paper or an article. Essays can be formal as well as
+                    informal.
+                    Formal essays are generally academic in nature and tackle serious topics.</p>
+            </marquee>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="col footer-logo">
+            <h2>KCC Institute of Technology and Management</h2>
+            <p>5th Floor, A-118,</p>
+            <p>Sector-136, Noida, Uttar Pradesh - 201305</p>
+        </div>
+        <div class="col about-us">
+            <a href="#">About us</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="developed">Developed by :</div>
+    </footer>
+</body>
+
+</html>

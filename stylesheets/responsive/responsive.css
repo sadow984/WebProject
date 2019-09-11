@@ -1,0 +1,162 @@
+/* For tablets */
+@media all and (max-width : 1024px) {
+
+    /* footer starts here / For footer part */
+    .col {
+        float: none;
+    }
+
+    .footer {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-logo, .about-us {
+        width: 100%;
+    }
+
+    .developed {
+        margin: 3px;
+        /* position: relative; */
+        text-align: center;
+    }
+
+    /* footer ends here */
+
+    /* header starts here / for header part */
+    .header {
+        height: 200px;
+        text-align: center;
+    }
+
+    .name {
+        float: left;
+        width: 30%;
+        text-align: center;
+        margin: 45px auto;
+    }
+
+    /* .login {
+        margin: 5px auto;
+        line-height: 200px;
+    } */
+
+    .login a {
+        float: right;
+        width: 20%;
+        margin: 80px 20px;
+    }
+
+    .form-popup {
+        top: calc(50% - 150px);
+        left: calc(50% - 150px);
+    }
+
+    /* header ends here */
+}
+
+
+/* for smartphones */
+@media all and (max-width : 640px) {
+
+    /* for footer part  */
+    .col {
+        float: none;
+    }
+
+    .footer {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-logo, .about-us {
+        width: 100%;
+    }
+
+    .developed {
+        /* position: relative; */
+        text-align: center;
+        margin: 5px;
+        padding: 0;
+    }
+
+    /* footer ends here */
+
+    /* header start here / for header part */
+    .header {
+        box-sizing: border-box;
+        height: 200px;
+        text-align: center;
+        padding: 20px 20px;
+    }
+
+    .name {
+        margin: 0 auto 20px;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .login a {
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    .form-popup {
+        max-width: 280px;
+        position: fixed;
+        top: calc(50% - 140px);
+        left: calc(50% - 140px);
+    }
+
+    /* header ends here */
+
+    .column {
+        float: none;
+    }
+
+    /* menu buttons starts here / for menu buttons */
+
+    .left {
+        margin: 0;
+        width: 100%;
+        height: initial;
+        text-align: center;
+    }
+
+    .left a {
+        display: block;
+        width: 95%;
+        margin: 3px auto;
+        line-height: 35px
+    }
+
+    /* menu ends here */
+
+    /* notice part starts here */
+
+    .mid {
+        width: 98%;
+        margin: 5px auto;
+        text-align: center;
+    }
+
+    /* notice part ends here */
+
+    /* circular part starts here */
+    .right {
+        width: 98%;
+        margin: 5px auto;
+        text-align: center;
+        height: 250px;
+    }
+
+    .right marquee {
+        height: 215px;
+    }
+
+    /* circular ends here */
+}
+
