@@ -17,16 +17,15 @@
 <body>
     <header class="header up">
         <div class="name">
-            <h2>KCC Institute of Technology and Management</h2>
+            <h2>KCC Institute of Technology and Management </h2>
         </div>
-        <div class="login">
+        <div id="abc" class="login">
             <a id="login" onclick="openForm()"> Login </a>
 
             <div class="form-popup" id="myForm">
                 <div>
                     <form action="" class="form-container">
-                        <div id="sign-in-up"><a href="">Sign in</a><a href="">Sign up</a></div>
-
+                        <span onclick="closeForm()" class="display">&times;</span>
                         <label for="id"><b> ID </b></label>
                         <input type="text" placeholder="Enter Your ID" name="id" required>
 

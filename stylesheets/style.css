@@ -64,6 +64,23 @@
     color: black;
 }
 
+.display {
+    position: absolute;
+    size: 20px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    display: block;
+    width: 35px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.display:hover {
+    background-color: rgb(48, 100, 196);
+    border-top-right-radius: 8px;
+}
+
 .form-container {
     max-width: 350px;
     padding: 10px;
