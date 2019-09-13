@@ -9,31 +9,37 @@
 
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/responsive/responsive.css">
-    <script src="/script/script.js"></script>
+    <!-- <script src="/script/script.js"></script> -->
 
-    <title>Project</title>
+    <title>CSE Forum</title>
 </head>
 
-<body>
+<body style="width: 100%;">
     <header class="header up">
         <div class="name">
             <h2>KCC Institute of Technology and Management </h2>
         </div>
-        <div id="abc" class="login">
-            <a id="login" onclick="openForm()"> Login </a>
+        <div class="login">
+            <a id="login" onclick="document.getElementById('pop-up').style.display = 'block'"> Login </a>
 
-            <div class="form-popup" id="myForm">
-                <div>
-                    <form action="" class="form-container">
-                        <span onclick="closeForm()" class="display">&times;</span>
-                        <label for="id"><b> ID </b></label>
-                        <input type="text" placeholder="Enter Your ID" name="id" required>
+            <div class="pop-up-container" id="pop-up" style="display: none">
+                <div class="pop-up-content">
+                    <form action="" onsubmit="alert('success')">
+                        <span class="close"> &times; </span>
 
-                        <label for="psw"><strong> Password </strong></label>
-                        <input type="password" name="psw" placeholder="Enter Password" required>
+                        <h2 class='form-login'>Login</h2>
+
+                        <label for="ID" class='ID'> ID: </label>
+                        <input type="text" placeholder="Enter Your ID" name="ID" id='ID' required
+                            onfocus="this.focus()">
+
+                        <label for="password" class='password'> Password: </label>
+                        <input type="password" name="password" placeholder="Enter Password" id='password' required
+                            onfocus="this.focus()">
 
                         <button type="submit" class="btn"> Login </button>
-                        <button class="btn cancel" onclick="closeForm()"> Close </button>
+                        <button class="btn cancel" onclick="document.getElementById('my-form').style.display = 'none'">
+                            Close </button>
                     </form>
                 </div>
             </div>
@@ -41,7 +47,7 @@
         </div>
         <div class="image"> Image for background.</div>
     </header>
-    <div class="row center">
+    <div class="row">
         <div class="column menu left">
             <ul>
                 <li><a href="#">First</a></li>
@@ -57,7 +63,7 @@
                 <a href="" id="important" onclick="options('important')">Important</a>
             </div>
 
-            <iframe id="frame" src="notice_page.html"> Sorry your browser doesn't support frames.
+            <iframe id="iframe" src="notice_page.html"> Sorry your browser doesn't support frames.
             </iframe>
         </div>
         <div class="column right">

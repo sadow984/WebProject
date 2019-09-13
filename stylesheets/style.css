@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+body {
+    position: absolute;
+}
+
 .header {
     height: 150px;
     text-align: center;
@@ -28,12 +32,6 @@
     margin: 3% 3%;
 }
 
-/* .login a:hover {
-    opacity: 1;
-} */
-
-/* for popup form */
-
 #login {
     padding: 12px 18px;
     border: none;
@@ -41,153 +39,164 @@
     opacity: 1;
 }
 
-.form-popup {
-    display: none;
+.pop-up-container {
     position: fixed;
-    top: calc(50% - 175px);
-    left: calc(50% - 175px);;
-    z-index: 1000;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(172, 162, 162, 0.7);
 }
 
-.form-popup form {
-    background-color: #fff;
-    box-shadow: 30px 30px 60px #555;
-    border: 0;
-    border-radius: 10px;
+.pop-up-content {
+    height: 380px;
+    width: 300px;
+    background-color: rgb(17, 141, 141);
+    position: relative;
+    margin: 12% auto;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgb(83, 77, 77);
 }
 
-.login form a {
-    float: none;
-    margin: 0 10px 20px 10px;
-    width: 50%;
-    background-color: white;
-    color: black;
-}
-
-.display {
+.close {
     position: absolute;
-    size: 20px;
     top: 0;
     right: 0;
-    cursor: pointer;
+    padding: 10px 7px 0 0;
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.close:hover {
+    box-sizing: border-box;
+    background-color: rgb(167, 160, 160);
     display: block;
-    width: 35px;
-    height: 25px;
-    line-height: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    /* height: 30px;
+    width: 30px; */
 }
 
-.display:hover {
-    background-color: rgb(48, 100, 196);
-    border-top-right-radius: 8px;
-}
-
-.form-container {
-    max-width: 350px;
+.pop-up-content .form-login {
     padding: 10px;
-    background-color: white;
-    /* box-shadow: 5px 5px 5px rgb(167, 157, 157), -5px -5px 5px rgb(167, 157, 157); */
-    border: none;
+    display: block;
+    box-sizing: border-box;
 }
 
-.form-container input[type=text], .form-container input[type=password] {
-    width: 100%;
+.ID, .password, .close-btn {
+    margin: 10px;
+    display: block;
+}
+
+.pop-up-content input[type=text], .pop-up-content input[type=password] {
+    width: 95%;
     padding: 15px;
     margin: 5px 0 22px 0;
-    border: none;
     background: #f1f1f1;
+    border: none;
+    border-radius: 5px;
 }
 
-.form-container input[type=text]:focus, .form-container input[type=password]:focus {
-    background-color: #ddd;
+.pop-up-content input[type=text]:focus, .pop-up-content input[type=password]:focus {
+    background-color: rgb(197, 190, 190);
     outline: none;
 }
 
-.form-container .btn {
-    background-color: #4CAF50;
+.btn {
+    background-color: #3da340;
     color: white;
-    padding: 16px 20px;
     border: none;
+    padding: 15px 20px;
     cursor: pointer;
-    width: 100%;
-    margin-bottom:10px;
-    opacity: 0.9;
+    width: 90%;
+    border-radius: 5px;
+    margin: 3px;
+    opacity: 0.8;
 }
 
-.form-container .cancel {
-    background-color: red;
+.cancel {
+    background-color: rgb(209, 19, 19);
 }
 
-.form-container .btn:hover, .open-button:hover {
+.btn:hover {
     opacity: 1;
 }
 
-/* popup form ends here */
+/* popup part ends here */
 
 .column {
     float: left;
-    height: 400px;
     width: 100%;
-    margin-bottom: 10px;
-}
-
-.menu {
-    width: 10%;
-    text-align: center;
-    margin-left: 2%;
-    margin-right: 0;
-}
-
-.left a {
+    height: 400px;
     display: block;
-    background-color: green;
+}
+
+.left {
+    width: 10%;
+    /* background-color: red; */
+    position: absolute;
+    left: 0;
+    margin: 0 1% 0 0;
+}
+
+.menu a {
+    width: 90%;
+    display: block;
+    padding: 12px 18px;
+    background: green;
+    margin: 5px auto;
+    text-align: center;
     color: white;
-    width: 80%;
-    line-height: 30px;
-    margin-top: 3px;
+    letter-spacing: 1px;
 }
 
 .mid {
-    display: block;
-    width: 56%;
-    text-align: center;
-}
-
-.mid iframe {
-    padding: 1% 2%;
-    background-color: grey;
-    width: 100%;
-    height: 350px;
-    border: none;
+    width: 55%;
+    position: absolute;
+    left: 12%;
+    background: rgb(43, 40, 40);
 }
 
 .mid .options {
     width: 100%;
-    height: 30px;
-    /* background-color: rgb(144, 171, 223) */
+    background: white;
+    /* border-bottom: 1px solid rgb(128, 124, 124); */
 }
 
 .mid .options a {
-    padding: 0 5px;
     float: left;
-    /* margin: 0 5px; */
-    color: black;
-    border: 3px outset rgb(194, 191, 191);
-    line-height: 20px;
-    display: block;
-    background-color: rgb(173, 168, 168);
+    color: white;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background: rgb(75, 73, 73);
+    padding: 10px 15px;
+    border: 1px groove white;
+}
+
+.mid iframe {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border: none;
+    height: 354px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(77, 72, 72);
 }
 
 .right {
+    position: absolute;
+    left: 69%;
+    width: 31%;
+    background-color: rgb(219, 151, 24);
+    padding: 1%;
     text-align: center;
-    display: block;
-    width: 28%;
-    margin: 0 2%;
-    padding: 1% 1%;
-    background-color: orange;
 }
 
-.right #mar {
+.right p {
     text-align: center;
+    overflow: hidden;
 }
 
 .row :after {
@@ -196,14 +205,17 @@
     display: table;
 }
 
+.row {
+    height: 410px;
+}
+
+
 .footer {
     position: relative;
-    display: inline-block;
-    border-top: 1px solid black;
-    height: 200px;
+    bottom: 0;
+    height: 150px;
     width: 100%;
-    color: white;
-    background-color: rgb(54, 54, 54);
+    background-color: rgb(43, 40, 40)
 }
 
 .col {
@@ -215,13 +227,8 @@
     width: 30%;
     margin-top: 20px;
     float: left;
+    color: white;
 }
-
-/* .address {
-    text-align: center;
-    width: 30%;
-    margin-top: 20px;
-} */
 
 .about-us {
     width: 20%;
@@ -233,7 +240,7 @@
     text-align: center;
     display: block;
     color: white;
-    margin-top: 3px;
+    margin-top: 5px;
 }
 
 .about-us a:hover {
@@ -254,5 +261,5 @@
     text-align: center;
     bottom: 0;
     right: 0;
-    margin: 10px 20px;
+    padding: 10px 20px;
 }
