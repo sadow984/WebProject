@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
     <link rel="stylesheet" type="text/css" href="/stylesheets/responsive/responsive.css">
-    <!-- <script src="/script/script.js"></script> -->
+    <script src="/script/script.js"></script>
 
     <title>CSE Forum</title>
 </head>
@@ -20,12 +20,12 @@
             <h2>KCC Institute of Technology and Management </h2>
         </div>
         <div class="login">
-            <a id="login" onclick="document.getElementById('pop-up').style.display = 'block'"> Login </a>
+            <a id="login" onclick='openForm()'> Login </a>
 
             <div class="pop-up-container" id="pop-up" style="display: none">
                 <div class="pop-up-content">
                     <form action="" onsubmit="alert('success')">
-                        <span class="close"> &times; </span>
+                        <span class="close" onclick="closeForm()"> &times; </span>
 
                         <h2 class='form-login'>Login</h2>
 
@@ -38,7 +38,7 @@
                             onfocus="this.focus()">
 
                         <button type="submit" class="btn"> Login </button>
-                        <button class="btn cancel" onclick="document.getElementById('my-form').style.display = 'none'">
+                        <button class="btn cancel" onclick='closeForm()'>
                             Close </button>
                     </form>
                 </div>
@@ -47,6 +47,8 @@
         </div>
         <div class="image"> Image for background.</div>
     </header>
+
+    <div class="space"></div>
     <div class="row">
         <div class="column menu left">
             <ul>
@@ -63,12 +65,12 @@
                 <a href="" id="important" >Most Liked</a>
             </div>
 
-            <iframe id="iframe" src='/pages/newest_page.html'> Sorry your browser doesn't support frames.
+            <iframe id="iframe" src='/pages/recent.html'> Sorry, your browser doesn't support frames.
             </iframe>
         </div>
         <div class="column right">
             <h2>Circular</h2>
-            <marquee id="mar" behavior="scroll" direction="up" height="360px" onmouseover="this.stop()"
+            <marquee id="mar" behavior="scroll" direction="up" height="350px" onmouseover="this.stop()"
                 onmouseout="this.start()">
                 <p>An essay is generally a short piece of writing outlining the writer's perspective or story. It is
                     often
@@ -93,5 +95,15 @@
         <div class="developed">Developed by :</div>
     </footer>
 </body>
+
+<script>
+    var popUp = document.getElementById('pop-up');
+
+    window.onclick = function(event) {
+        if (event.target == popUp) {
+            popUp.style.display = 'none';
+        }
+    }
+</script>
 
 </html>

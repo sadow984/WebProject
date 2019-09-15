@@ -1,0 +1,114 @@
+@media (max-width: 640px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    .header {
+        height: 150px;
+    }
+    
+    .name {
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .login a {
+        padding: 12px 18px;
+        float: none;
+        width: 95%;
+        display: block;
+    }
+
+    .space {
+        height: 160px;
+    }
+
+    .pop-up-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .pop-up-content {
+        top: 50%;
+        left: 50%;
+        transform: translate(-60%, -80%);
+        margin: 35% auto;
+    }
+
+    .column {
+        margin: 0;
+        float: none;
+        height: initial;
+    }
+
+    .menu {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .left a {
+        margin: 0;
+        width: 95%;
+        margin: 5px auto;
+    }
+
+    .mid {
+        margin: 0;
+        margin-top: 5px;
+        width: 98%;
+        margin: 0px auto;
+    }
+
+    .mid .options {
+        margin-top: 20px;
+    }
+
+    .mid .options a {
+        float: left;
+    }
+
+    .right {
+        margin: 0;
+        width: 98%;
+        margin: 0px auto;
+        margin-top: 5px;
+    }
+
+    .right h2 {
+        padding: 10px;
+    }
+
+    .right #mar {
+        padding: 10px;
+    }
+
+    .footer {
+        position: relative;
+        display: block;
+        bottom: 0;
+        height: 200px;
+    }
+
+    .col {
+        float: none;
+    }
+
+    .footer-logo {
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        float: none;
+        padding-bottom: 0;
+    }
+
+    .about-us {
+        width: 100%;
+        text-align: center;
+    }
+}
