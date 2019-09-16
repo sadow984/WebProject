@@ -26,7 +26,9 @@
 
             <div class="pop-up-container" id="pop-up" style="display: none">
                 <div class="pop-up-content">
+
                     <form action="" onsubmit="return validate()">
+
                         <span class="close" onclick="closeForm()"> &times; </span>
 
                         <h2 class='form-login'>Login</h2>
@@ -41,7 +43,8 @@
                             onfocus="this.focus()" minlength="6" maxlength="32">
                         <!-- <span id="error_password"></span> -->
 
-                        <button type="submit" class="btn"> Submit </button>
+                        <button type="submit" class="btn"> Login </button>
+
                         <button class="btn cancel" onclick='closeForm()'>
                             Close </button>
                     </form>
@@ -98,12 +101,12 @@
 
         <div class="developed">Developed by :</div>
     </footer>
-</body>
-
+  </body>
+  
 <script>
     var popUp = document.getElementById('pop-up');
 
-    window.onclick = function (event) {
+    window.onclick = function(event) {
         if (event.target == popUp) {
             popUp.style.display = 'none';
         }
