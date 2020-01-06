@@ -6,7 +6,7 @@
 - >NODE JS and
 - >REST API
 ---
-###This project is all about showing :
+### This project is all about showing :
 - Upcoming events in the college
 - Currently running events
 - Important Notices
